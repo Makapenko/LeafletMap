@@ -1,0 +1,21 @@
+.container {
+  width: 25%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 500px) {
+    width: 100%;
+    padding: 5px 0;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.btn {
+  margin-bottom: 5px;
+  @media (max-width: 500px) {
+    margin-bottom: 0;
+    width: 31vw;
+  }
+}
