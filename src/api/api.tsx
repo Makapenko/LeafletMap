@@ -7,7 +7,7 @@ const routesApi = {
     .join(";");
     
     try {
-      const response = await fetch(`http://router.project-osrm.org/route/v1/driving/${formattedPoints}?steps=true&geometries=geojson&overview=full`);
+      const response = await fetch(`https://router.project-osrm.org/route/v1/driving/${formattedPoints}?steps=true&geometries=geojson&overview=full`);
 
       if (!response.ok) {
         throw new Error("Network response was not ok");
