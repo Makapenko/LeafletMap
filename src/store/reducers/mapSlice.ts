@@ -51,3 +51,4 @@ export const { setPolyline, setBounds, setLoading, setError } =
 export const polylineSelector = (state: RootState) => state.mapReducer.polyline;
 export const boundsSelector = (state: RootState) => state.mapReducer.bounds;
 export const isLoadingSelector = (state: RootState) => state.mapReducer.isLoading;
+export const mapErrorSelector = (state: RootState) => state.mapReducer.error;

@@ -55,11 +55,7 @@ function* fetchRoute(action: PayloadAction<IRoute>) {
       put(setPolyline(points)),
     ]);
   } catch (error) {
-    if (error instanceof Error) {
-      yield put(setError(error.message));
-    } else {
-      yield put(setError(String(error)));
-    }
+    yield put(setError('Some error'));
     yield put(setLoading(false));
   }
 }
